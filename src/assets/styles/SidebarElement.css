@@ -1,0 +1,16 @@
+.sidebarElement {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.iconTeam {
+    height: 24px;
+}
+
+.sidebarElement:hover {
+    background-color: rgba(255, 77, 41, 0.588);
+    box-shadow: rgba(255, 77, 41, 0.1) 0px 8px 24px;
+}

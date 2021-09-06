@@ -1,0 +1,13 @@
+.sideBar {
+    background-color: #2C394B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: fixed;
+    width: 200px;
+}
