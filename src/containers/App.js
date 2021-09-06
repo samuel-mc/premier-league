@@ -18,7 +18,7 @@ function App() {
         <SidebarElement title="Estadisticas" img={null} />
         {
           teams.teams.map( team => 
-            <SidebarElement title={team.name} img={team.crestUrl}  />
+            <SidebarElement title={team.name} img={team.crestUrl} key={team.id}  />
           )
         }
       </Sidebar>
