@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { Sidebar } from '../components/Sidebar';
 import { SidebarElement } from '../components/SidebarElement';
 import { Content } from '../components/Content';
+import { Footer } from '../components/Footer';
 import { useInitialState } from '../hooks/useInitialState'
 import React from 'react';
 
@@ -27,6 +28,7 @@ function App() {
       <Content>
         <p>Proof</p>
       </Content>
+      <Footer />
     </div>
   );
 }
