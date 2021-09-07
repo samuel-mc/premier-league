@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/premier-league/static/css/main.48129d7e.chunk.css",
-    "main.js": "/premier-league/static/js/main.9f6d5ace.chunk.js",
-    "main.js.map": "/premier-league/static/js/main.9f6d5ace.chunk.js.map",
+    "main.css": "/premier-league/static/css/main.767a80e6.chunk.css",
+    "main.js": "/premier-league/static/js/main.22218855.chunk.js",
+    "main.js.map": "/premier-league/static/js/main.22218855.chunk.js.map",
     "runtime-main.js": "/premier-league/static/js/runtime-main.6ab24580.js",
     "runtime-main.js.map": "/premier-league/static/js/runtime-main.6ab24580.js.map",
     "static/js/2.195e2d2e.chunk.js": "/premier-league/static/js/2.195e2d2e.chunk.js",
     "static/js/2.195e2d2e.chunk.js.map": "/premier-league/static/js/2.195e2d2e.chunk.js.map",
     "index.html": "/premier-league/index.html",
-    "static/css/main.48129d7e.chunk.css.map": "/premier-league/static/css/main.48129d7e.chunk.css.map",
+    "static/css/main.767a80e6.chunk.css.map": "/premier-league/static/css/main.767a80e6.chunk.css.map",
     "static/js/2.195e2d2e.chunk.js.LICENSE.txt": "/premier-league/static/js/2.195e2d2e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6ab24580.js",
     "static/js/2.195e2d2e.chunk.js",
-    "static/css/main.48129d7e.chunk.css",
-    "static/js/main.9f6d5ace.chunk.js"
+    "static/css/main.767a80e6.chunk.css",
+    "static/js/main.22218855.chunk.js"
   ]
 }
