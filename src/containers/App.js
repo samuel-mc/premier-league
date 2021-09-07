@@ -1,4 +1,5 @@
 import '../assets/styles/App.css';
+import { Header } from '../components/Header';
 import { Sidebar } from '../components/Sidebar';
 import { SidebarElement } from '../components/SidebarElement';
 import { Content } from '../components/Content';
