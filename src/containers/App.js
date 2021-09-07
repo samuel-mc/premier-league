@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header>
-        <p>Chido</p>
+        <p>Choose your team</p>
       </Header>
       <Sidebar className="sideBar">
         <span className="space"></span>
