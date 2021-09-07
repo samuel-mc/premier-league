@@ -14,7 +14,6 @@ function App() {
     <div className="App">
       <Sidebar className="sideBar">
         <span className="space"></span>
-        {/* Todo: Hacer asincrona esta mmda */}
         <SidebarElement title="Estadisticas" img={null} />
         {
           teams.teams.map( team => 
