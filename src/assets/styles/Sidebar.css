@@ -11,3 +11,10 @@
     position: fixed;
     width: 200px;
 }
+
+@media (max-width: 700px) {
+    .sideBar {
+        width: 100px;
+
+    }
+}

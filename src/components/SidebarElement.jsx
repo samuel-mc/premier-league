@@ -4,7 +4,9 @@ import'../assets/styles/SidebarElement.css'
 const SidebarElement = ({title, img}) => {
     return(
         <a className="sidebarElement">
-            {title}
+            <p className="teamTitle">
+                {title}
+            </p>
             {
                 img != null
                     && <img src={img} alt={title} className='iconTeam' />
