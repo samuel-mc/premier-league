@@ -7,7 +7,6 @@ import { useInitialState } from '../hooks/useInitialState'
 import React from 'react';
 
 function App() {
-  
   const teams = useInitialState();
   console.log(teams)
 
