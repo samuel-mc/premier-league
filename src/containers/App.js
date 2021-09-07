@@ -13,6 +13,9 @@ function App() {
 
   return (
     <div className="App">
+      <Header>
+        <p>Chido</p>
+      </Header>
       <Sidebar className="sideBar">
         <span className="space"></span>
         <SidebarElement title="Estadisticas" img={null} />
