@@ -1,0 +1,16 @@
+.score{
+    background-color: #F7F6F2;
+    border-radius: 20px;
+    color: #000;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .score{
+        width: 100%;
+    }
+
+}

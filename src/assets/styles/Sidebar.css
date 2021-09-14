@@ -1,6 +1,6 @@
 .sideBar {
     background-color: #2C394B;
-    color: #fff;
+    color: #F7F6F2;
     display: flex;
     flex-direction: column;
     font-size: 17px;
@@ -9,7 +9,7 @@
     overflow: auto;
     padding: 0;
     position: fixed;
-    width: 200px;
+    width: 20%;
 }
 
 @media (max-width: 700px) {

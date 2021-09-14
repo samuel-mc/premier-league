@@ -1,7 +1,8 @@
 import React from 'react';
+import '../assets/styles/Header.css'
 
 const Header = ({children}) => (
-    <header>
+    <header className="header">
         {children}
     </header>
 )
