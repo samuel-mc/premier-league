@@ -38,18 +38,19 @@ const PrincipalContainer =  (props) => {
     return(
         <main>
             <div className="matches">
+                <p>Partidos</p>
             {
-                matches.matches.map(match =>
-                    <Score
-                        imgAwayTeam={getIcon(match.awayTeam.id)}
-                        imgHomeTeam={getIcon(match.homeTeam.id)}
-                        awayTeam={match.awayTeam.name}
-                        homeTeam={match.homeTeam.name}
-                        awayTeamScore={match.score.fullTime.awayTeam}
-                        homeTeamScore={match.score.fullTime.homeTeam}
-                        key={match.id}
-                    />
-                )
+                // matches.matches.map(match =>
+                //     <Score
+                //         // imgAwayTeam={getIcon(match.awayTeam.id)}
+                //         // imgHomeTeam={getIcon(match.homeTeam.id)}
+                //         awayTeam={match.awayTeam.name}
+                //         homeTeam={match.homeTeam.name}
+                //         awayTeamScore={match.score.fullTime.awayTeam}
+                //         homeTeamScore={match.score.fullTime.homeTeam}
+                //         key={match.id}
+                //     />
+                // )
             }
             </div>
         </main>
