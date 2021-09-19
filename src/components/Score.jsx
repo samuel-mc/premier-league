@@ -9,6 +9,7 @@ const Score = (props) => {
             <p>{props.awayTeam} vs {props.homeTeam}</p>
             <p>{props.awayTeamScore} - {props.homeTeamScore}</p>
             <img src={props.imgAwayTeam} />
+            {/* <img src={props.imgHomeTeam} /> */}
         </div>
     )
 }

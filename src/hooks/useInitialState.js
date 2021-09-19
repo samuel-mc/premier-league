@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const useInitialState = (API) => {
     const [ teams, setTeams] = useState({ teams: [] });
+    const [ teamSelected, setTeamSelected] = useState(66);
 
     
     useEffect(() => {
@@ -19,7 +20,7 @@ const useInitialState = (API) => {
 
     }
 
-    return teams;
+    return {teams, teamSelected};
 }
 
 export { useInitialState };

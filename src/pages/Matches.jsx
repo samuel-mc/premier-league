@@ -24,17 +24,17 @@ const Matches = (props) => {
     
     return (
         <div className="matches">
-          {
-              matches.matches.map(match =>
-                <Score
-                awayTeam={match.awayTeam.name}
-                homeTeam={match.homeTeam.name}
-                awayTeamScore={match.score.fullTime.awayTeam}
-                homeTeamScore={match.score.fullTime.homeTeam}
-                key={match.id}
-                />
-            )
-          }
+        {
+            matches.matches.map(match =>
+            <Score
+            awayTeam={match.awayTeam.name}
+            homeTeam={match.homeTeam.name}
+            awayTeamScore={match.score.fullTime.awayTeam}
+            homeTeamScore={match.score.fullTime.homeTeam}
+            key={match.id}
+            />
+        )
+        }
         </div>
     )
 }
