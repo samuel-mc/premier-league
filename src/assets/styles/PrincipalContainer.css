@@ -1,0 +1,30 @@
+.matches{
+    background-color: #334756;
+    color: #F7F6F2;
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 21%;
+    padding: 1px 16px;
+    width: calc(100% - 320px);
+    /* height: 550px; */
+}
+
+@media (max-width: 700px) {
+    .matches{
+        font-size: 15px;
+        margin-left: 21%;
+        width: calc(100% - 150px);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .matches{
+        margin-left: 22%;
+        width: calc(100% - 130px);
+    }
+
+}

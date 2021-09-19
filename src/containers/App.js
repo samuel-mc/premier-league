@@ -1,34 +1,34 @@
-import '../assets/styles/App.css';
+import React from 'react';
+import { useInitialState } from '../hooks/useInitialState';
 import { Header } from '../components/Header';
 import { Sidebar } from '../components/Sidebar';
 import { SidebarElement } from '../components/SidebarElement';
-import { Content } from '../components/Content';
+import { PrincipalContainer } from '../components/PrincipalContainer';
 import { Footer } from '../components/Footer';
-import { useInitialState } from '../hooks/useInitialState'
-import React from 'react';
+import '../assets/styles/App.css';
 
 function App() {
-  const teams = useInitialState();
-  console.log(teams)
+  const teams = useInitialState().teams;
 
   return (
+
     <div className="App">
-      <Header>
-        <p>Chido</p>
-      </Header>
-      <Sidebar className="sideBar">
-        <span className="space"></span>
-        <SidebarElement title="Estadisticas" img={null} />
-        {
-          teams.teams.map( team => 
-            <SidebarElement title={team.name} img={team.crestUrl} key={team.id}  />
-          )
-        }
-      </Sidebar>
-      <Content>
-        <p>Proof</p>
-      </Content>
-      <Footer />
+        <Header>
+          <p>Choose your team</p>
+        </Header>
+        <Sidebar className="sideBar">
+            <span className="space"></span>
+            {
+                teams.teams.map( team => 
+                <SidebarElement title={team.name} img={team.crestUrl} key={team.id} id={team.id} />
+                )
+            }
+        </Sidebar>
+        <PrincipalContainer>
+          <p>1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
+        </PrincipalContainer>
+
+        <Footer />
     </div>
   );
 }

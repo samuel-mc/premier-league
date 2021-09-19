@@ -1,9 +1,17 @@
 .sidebarElement {
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #2f3d50, #283344);
+    box-shadow:  -5px 5px 15px #1a212c,
+                 5px -5px 15px rgba(61, 80, 107, 0.5);
+    color: #F7F6F2;
+    cursor: pointer; 
     display: flex;
     justify-content: space-between;
+    margin: 7px;
     padding: 10px;
-    cursor: pointer;
-    transition: all 1s;
+    text-decoration: none;
+    transition: all 1.5s;
 }
 
 .iconTeam {
@@ -11,6 +19,12 @@
 }
 
 .sidebarElement:hover {
-    background-color: rgba(255, 77, 41, 0.588);
-    box-shadow: rgba(255, 77, 41, 0.1) 0px 8px 24px;
+    background: #082032;
+    /* transform: scale(1.05); */
+}
+
+@media (max-width: 700px) {
+    .teamTitle{
+        display: none;
+    }
 }
