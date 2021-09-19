@@ -4,7 +4,7 @@ import '../assets/styles/Footer.css'
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>Gracias totales!</p>
+            <p> Un producto de <a href="https://github.com/samuel-mc" target="_blank">samuel-mc</a></p>
         </footer>
     )
 }
