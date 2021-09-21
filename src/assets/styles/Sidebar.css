@@ -4,12 +4,10 @@
     display: flex;
     flex-direction: column;
     font-size: 17px;
-    /* height: 100%; */
     height: calc(100% - 100px);
-    margin: 0;
-    overflow: auto;
+    overflow-y: auto;
     padding: 0;
-    position: fixed;
+    position: absolute;
     width: 25%;
 }
 

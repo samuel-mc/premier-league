@@ -7,13 +7,9 @@
 }
 
 body {
-
     background-color: #F2E6D8;
     font-family: 'Poppins', sans-serif;
-}
-
-span {
-    height: 10%;
+    max-height: 80vh;
 }
 
 ::-webkit-scrollbar{

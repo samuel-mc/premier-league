@@ -7,30 +7,30 @@ const Header = () => {
 
     const showMenu = () => {
         document.querySelector(".header-menu").classList.toggle("active");
-        icon == "bars" ? setIcon("cross") : setIcon("bars");
+        icon === "bars" ? setIcon("cross") : setIcon("bars");
     }
 
     return (
         <header className="header">
             <div className="hidden" onClick={showMenu}>
-                <img id="hiddenImg" className="hidden-img" style={{ display: icon == "bars" ? "inline" : "none" }}  src="http://cdn.onlinewebfonts.com/svg/img_264699.png" />
-                <img id="hiddenImg" className="hidden-img" style={{ display: icon == "cross" ? "inline" : "none" }}  src="https://www.shareicon.net/data/512x512/2015/09/17/642337_close_512x512.png" />
+                <img id="hiddenImg" className="hidden-img" style={{ display: icon === "bars" ? "inline" : "none" }}  src="http://cdn.onlinewebfonts.com/svg/img_264699.png" />
+                <img id="hiddenImg" className="hidden-img" style={{ display: icon === "cross" ? "inline" : "none" }}  src="https://www.shareicon.net/data/512x512/2015/09/17/642337_close_512x512.png" />
             </div>
             <div className="header-menu">
                 <div className="header-Item">
-                    <img className="headerItem-icon" src="https://1.bp.blogspot.com/-8ZLe8UwNFkU/YJnvOHEYqwI/AAAAAAABjU0/9bsAygpiu4ES97lul8Z_jBgjs44iLHjhwCLcBGAsYHQ/s512/UCL.png" />
+                    <img className="headerItem-icon" src="https://1.bp.blogspot.com/-8ZLe8UwNFkU/YJnvOHEYqwI/AAAAAAABjU0/9bsAygpiu4ES97lul8Z_jBgjs44iLHjhwCLcBGAsYHQ/s512/UCL.png" alt="Champions League Logo" />
                     <span> Champions League </span>
                 </div>
                 <div className="header-Item">
-                    <img className="headerItem-icon" src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" />
+                    <img className="headerItem-icon" src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Spanish flag"/>
                     <span> La Liga </span>
                 </div>
                 <div className="header-Item">
-                    <img className="headerItem-icon" src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" />
+                    <img className="headerItem-icon" src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Italian flag" />
                     <span> Serie A </span>
                 </div>
                 <div className="header-Item">
-                    <img className="headerItem-icon" src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" />
+                    <img className="headerItem-icon" src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="England flag"/>
                     <span> Premier League </span>
                 </div>
             </div>
