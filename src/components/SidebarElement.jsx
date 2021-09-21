@@ -8,10 +8,9 @@ const SidebarElement = ({title, img, id}) => {
     }
 
     return(
-        <a 
+        <button 
             id={id}
             className="sidebarElement"
-            href={`/matches/${id}`}
             // onClick={chooseTeam}
         >
             <p className="teamTitle">
@@ -21,7 +20,7 @@ const SidebarElement = ({title, img, id}) => {
                 img != null
                     && <img src={img} alt={title} className='iconTeam' />
             }
-        </a>
+        </button>
     );
 }
 
