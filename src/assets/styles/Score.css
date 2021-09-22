@@ -1,11 +1,13 @@
 .score{
-    background-color: #F7F6F2;
+    border-radius: 50px;
+    background: #F2E6D8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 20px;
     color: #000;
     text-align: center;
     margin: 10px;
     padding: 5px;
-    width: 40%;
+    width: 45%;
 }
 
 @media (max-width: 768px) {

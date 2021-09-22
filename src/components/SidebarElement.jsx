@@ -1,11 +1,13 @@
 import React from 'react';
 import'../assets/styles/SidebarElement.css'
 
-const SidebarElement = ({title, img, id}) => {
+const SidebarElement = ({title, img, id, setTeamSelected, fetchApi, setLoadingMatches}) => {
 
     const chooseTeam = async (e) =>{
         const id_team = e.target.id;
-        console.log(id_team);
+        setTeamSelected(id_team);
+        setLoadingMatches(true);
+        fetchApi(id_team);
     }
 
     return(

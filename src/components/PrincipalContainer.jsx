@@ -5,29 +5,9 @@ import { Score } from '../components/Score';
 
 import '../assets/styles/PrincipalContainer.css'
 
-const PrincipalContainer =  (props) => {
+const PrincipalContainer =  ({matches}) => {
 
     const teams = useInitialState().teams;
-    const teamSelected = useInitialState().teamSelected;
-
-    console.log(teamSelected)
-
-    const [ matches, setMatches] = React.useState({ matches: [] });
-    
-    React.useEffect(() => {
-        fetchApi();
-    }, []);
-    
-    const fetchApi = async () => {
-        await fetch(`http://api.football-data.org/v2/teams/${teamSelected}/matches?status=FINISHED`, {
-            headers: {
-                'X-Auth-Token': '66bc51aa24db42129bc764442d7f8527'
-            }
-        })
-        .then(response => response.json())
-        .then(data => setMatches(data));
-        
-    }
 
     const getIcon = async (id_team) =>{
         const url_team = teams.teams.filter(team => team.id === id_team);
