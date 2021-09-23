@@ -18,7 +18,7 @@
     color: #fff;
     padding: 10px;
     transition: all 1s;
-    width: 200px;
+    width: 250px;
 }
 
 .headerItem-icon{
@@ -39,13 +39,11 @@
     background-color: #1E1D40;
 }
 
-
-
-@media (max-width: 480px) {
+@media (min-width: 320px) {
     .header{
         display: flex;
         justify-content: flex-end;
-        /* display: grid; */
+        height: 70px;
     }
 
     .header-menu{
@@ -85,7 +83,37 @@
     }
 }
 
+@media (min-width: 768px) {
+    .header{
+        align-items: center;
+        height: 110px;
+    }
 
+    .header-menu{
+        display: flex;
+        background-color: #1b65a6;
+        left: 0;
+        top: 10px;
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+    .header-Item {
+        font-size: 1.6rem;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header{
+        height: 70px;
+    }
+    .header-Item {
+        width: 200px;
+    }
+}
 
 @keyframes slidein {
     0% {

@@ -10,9 +10,22 @@
     width: 45%;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) {
     .score{
         width: 100%;
     }
 
+    .matches .score p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .score{
+        width: 45%;
+    }
+
+    .matches .score p {
+        font-size: 1.7rem;
+    }
 }

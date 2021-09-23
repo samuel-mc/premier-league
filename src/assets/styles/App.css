@@ -9,8 +9,9 @@
 body {
     background-color: #F2E6D8;
     font-family: 'Poppins', sans-serif;
-    max-height: 80vh;
 }
+
+html { font-size: 62.5%; }
 
 ::-webkit-scrollbar{
     width: 10px;
