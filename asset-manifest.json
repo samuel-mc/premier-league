@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/premier-league/static/css/main.181c967f.chunk.css",
+    "main.css": "/premier-league/static/css/main.7ec41a8f.chunk.css",
     "main.js": "/premier-league/static/js/main.de2d2a6b.chunk.js",
     "main.js.map": "/premier-league/static/js/main.de2d2a6b.chunk.js.map",
     "runtime-main.js": "/premier-league/static/js/runtime-main.5bd42843.js",
@@ -8,13 +8,13 @@
     "static/js/2.2feaac4b.chunk.js": "/premier-league/static/js/2.2feaac4b.chunk.js",
     "static/js/2.2feaac4b.chunk.js.map": "/premier-league/static/js/2.2feaac4b.chunk.js.map",
     "index.html": "/premier-league/index.html",
-    "static/css/main.181c967f.chunk.css.map": "/premier-league/static/css/main.181c967f.chunk.css.map",
+    "static/css/main.7ec41a8f.chunk.css.map": "/premier-league/static/css/main.7ec41a8f.chunk.css.map",
     "static/js/2.2feaac4b.chunk.js.LICENSE.txt": "/premier-league/static/js/2.2feaac4b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5bd42843.js",
     "static/js/2.2feaac4b.chunk.js",
-    "static/css/main.181c967f.chunk.css",
+    "static/css/main.7ec41a8f.chunk.css",
     "static/js/main.de2d2a6b.chunk.js"
   ]
 }
