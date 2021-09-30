@@ -1,0 +1,64 @@
+.standings-container {
+    margin-left: 250px;
+}
+
+.standings-team-icon{
+    height: 2rem;
+}
+
+@media (min-width: 320px){
+    .standings-container{
+        font-size: 1.3rem;
+        height: calc(100vh - 110px);
+        margin-left: 100px;
+        overflow: auto;
+        width: calc(100vw - 100px);
+        padding: 5px;
+    }
+    .standings-container table {
+        width: 100%;
+    }
+
+    table, td {
+        border: 1px solid #1e1d408a;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+
+    .standings-container .standings-table .standings-team-position {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .standings-container table .standings-team-info {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .standings-container{
+        font-size: 1.7rem;
+        height: calc(100vh - 140px);
+        margin-left: 230px;
+        width: calc(100vw - 230px);
+        padding: 20px;
+    }
+    .standings-team-icon{
+        height: 3rem;
+    }
+
+    .standings-container table {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .standings-container{
+        font-size: 2rem;
+        height: calc(100vh - 100px);
+        padding: 20px;
+    }
+}

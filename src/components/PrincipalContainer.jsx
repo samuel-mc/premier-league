@@ -5,15 +5,15 @@ import { Score } from '../components/Score';
 
 import '../assets/styles/PrincipalContainer.css'
 
-const PrincipalContainer =  ({matches}) => {
+const PrincipalContainer =  ({matches }) => {
 
     const teams = useInitialState().teams;
 
-    const getIcon = async (id_team) =>{
-        const url_team = teams.teams.filter(team => team.id === id_team);
-        console.log(url_team[0].crestUrl);
-        return(url_team[0].crestUrl);
-    }
+    // const getIcon = async (id_team) =>{
+    //     const url_team = teams.teams.filter(team => team.id === id_team);
+    //     console.log(url_team[0].crestUrl);
+    //     return(url_team[0].crestUrl);
+    // }
 
     return(
         <main>

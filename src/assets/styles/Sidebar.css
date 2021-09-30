@@ -8,7 +8,6 @@
     overflow-y: auto;
     padding: 0;
     position: absolute;
-    width: 25%;
 }
 
 @media (min-width: 320px) {

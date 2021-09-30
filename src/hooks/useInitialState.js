@@ -15,7 +15,6 @@ const useInitialState = (API) => {
         })
         .then(response => response.json())
         .then(data => setTeams(data));
-
     }
 
     return {teams};

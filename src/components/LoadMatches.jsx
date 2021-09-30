@@ -6,9 +6,7 @@ const LoadMatches = () => {
 
     return(
         <div className="loadingContainer">
-            <div className="scoreLoading">
-                <p> Cargando ... </p>
-            </div>
+            <p className="text-charging"> Cargando </p>
         </div>
     )
 }
