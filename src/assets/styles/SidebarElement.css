@@ -1,18 +1,18 @@
 .sidebarElement {
     align-items: center;
     border: 0;
-    border-radius: 30px;
-    background: linear-gradient(145deg, #e80e36, #c30c2d);
-    box-shadow:  7px 7px 14px #b60b2a,
-                  -7px -7px 14px #fc0f3a;
-    color: #F7F6F2;
-    cursor: pointer; 
+    border-radius: 20px;
+    background: linear-gradient(45deg, #383b51, #2f3244);
+    box-shadow:  5px -5px 10px #2b2d3e,
+                -5px 5px 10px #3d415a;
+    color: var(--white);
+    cursor: pointer;
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     justify-content: space-between;
-    margin: 0.7rem;
-    padding: 2rem;
+    margin: 8px;
+    padding: 16px;
     text-decoration: none;
     transition: all 1s;
 }
@@ -22,7 +22,7 @@
 }
 
 .sidebarElement:hover {
-    background: #1E1D40;
+    background: var(--primary);
     /* Usar este efecto para una clase selecionada
     background: #D90D32;
     box-shadow: inset 7px 7px 14px #b60b2a,

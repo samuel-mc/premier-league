@@ -1,7 +1,7 @@
 .header {
-    background-color: #1b65a6;
+    background-color: var(--primary);
     height: auto;
-    padding: 15px 0;
+    padding: 16px 0;
 }
 
 .header-menu{
@@ -13,16 +13,15 @@
 
 .header-Item {
     text-align: center;
-    border: solid 1px rgba(30, 28, 63, 0.1);
-    border-radius: 10px;
-    color: #fff;
-    padding: 10px;
+    border-radius: 12px;
+    color: var(--white);
+    padding: 12px;
     transition: all 1s;
     width: 250px;
 }
 
 .headerItem-icon{
-    height: 15px;
+    height: 16px;
 }
 
 .hidden {
@@ -36,7 +35,7 @@
 }
 
 .header-Item:hover{
-    background-color: #1E1D40;
+    background-color: var(--secondary);
 }
 
 @media (min-width: 320px) {
@@ -48,7 +47,6 @@
 
     .header-menu{
         display: flex;
-        background-color: #1b65a6;
         left: 100%;
         overflow-y: auto;
         position: fixed;
@@ -91,7 +89,6 @@
 
     .header-menu{
         display: flex;
-        background-color: #1b65a6;
         left: 0;
         top: 10px;
         width: 100%;

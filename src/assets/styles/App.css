@@ -7,22 +7,29 @@
 }
 
 body {
-    background-color: #F2E6D8;
+    background-color: var(--white);
     font-family: 'Poppins', sans-serif;
 }
 
 html { font-size: 62.5%; }
 
+:root{
+    --white: #f6f6f6;
+    --red: #ee2b47;
+    --primary: #2c2e3e;
+    --secondary: #34374c;
+}
+
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track{
-    background: #1b65a6;
-    border-radius: 10px;
+    background: var(--primary);
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #1E1D40;
-    border-radius: 10px;
+    background: var(--red);
+    border-radius: 8px;
 }
