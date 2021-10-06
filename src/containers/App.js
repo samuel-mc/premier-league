@@ -11,18 +11,20 @@ import { Footer } from '../components/Footer';
 import '../assets/styles/App.css';
 
 function App() {
-  const teams = useInitialState().teams;
-  const [ loadingMatches, setLoadingMatches] = React.useState(false);
+  const [ loadingMatches, setLoadingMatches] = React.useState(true);
   const [ leagueSelected, setLeagueSelected ] = React.useState(2021);
   const [ teamSelected, setTeamSelected] = React.useState(66);
-  const { matches, standings, fetchApi } = useUpdateMatches(teamSelected, setLoadingMatches);
+  const { matches, fetchApi } = useUpdateMatches(leagueSelected, teamSelected, setLoadingMatches);
+
+  const { teams, standings } = useInitialState(leagueSelected, setLoadingMatches);
 
   return (
 
     <div className="App">
         <Header
           leagueSelected={leagueSelected}
-          setLeagueSelected={leagueSelected}
+          setLeagueSelected={setLeagueSelected}
+          setLoadingMatches={setLoadingMatches}
         />
         <Sidebar className="sideBar">
             <span className="space"></span>
@@ -36,7 +38,7 @@ function App() {
               setLoadingMatches={setLoadingMatches}
             />
 
-            {
+            {!loadingMatches &&
                 teams.teams.map( team => 
                   <SidebarElement 
                     title={team.name}

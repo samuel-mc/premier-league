@@ -1,6 +1,6 @@
 import React from 'react';
 
-const useUpdateMatches = (teamSelected, setLoadingMatches) => {
+const useUpdateMatches = (leagueSelected, teamSelected, setLoadingMatches) => {
     const [ matches, setMatches] = React.useState({ matches: [] });
     const [ standings, setStandings ] = React.useState({ standings: []});
 
@@ -10,7 +10,7 @@ const useUpdateMatches = (teamSelected, setLoadingMatches) => {
 
     const fetchApi = async (teamSelected) => {
         if (teamSelected === "standings") {
-                await fetch(`http://api.football-data.org/v2/competitions/2021/standings`, {
+                await fetch(`http://api.football-data.org/v2/competitions/${leagueSelected}/standings`, {
                 headers: {
                     'X-Auth-Token': '66bc51aa24db42129bc764442d7f8527'
                 }
@@ -18,8 +18,6 @@ const useUpdateMatches = (teamSelected, setLoadingMatches) => {
             .then(response => response.json())
             .then(data => {
                 setStandings(data);
-                console.log(data.standings[0].table);
-                console.log(teamSelected);
                 setLoadingMatches(false);
             });
         } else {
